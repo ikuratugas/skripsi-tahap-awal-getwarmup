@@ -78,14 +78,6 @@ class PelangganProvider extends ChangeNotifier {
     Sheet sheetObject = excel['Pelanggan Data'];
 
     // Add header row
-    final greenStyle = CellStyle(
-      backgroundColorHex: ExcelColor.green, // Green for Yes
-    );
-    final redStyle = CellStyle(
-      backgroundColorHex: ExcelColor.red, // Red for No
-    );
-
-    // Add header row
     sheetObject.appendRow([
       const TextCellValue('UUID'),
       const TextCellValue('Nama'),
